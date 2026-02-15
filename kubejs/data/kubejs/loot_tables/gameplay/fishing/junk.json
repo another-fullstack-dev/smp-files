@@ -1,0 +1,109 @@
+{
+  "type": "minecraft:loot_table",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 17
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_nugget",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_nugget",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "create:zinc_nugget",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "create:copper_nugget",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:andesite",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diorite",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:granite",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobblestone",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:skeleton_skull",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0
+              },
+              "function": "minecraft:set_damage"
+            }
+          ],
+          "name": "minecraft:leather_chestplate",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:string",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 10,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:glow_ink_sac"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rotten_flesh",
+          "weight": 10
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "kubejs:gameplay/fishing/junk"
+}

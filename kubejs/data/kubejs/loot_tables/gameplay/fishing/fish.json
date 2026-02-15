@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:loot_table",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:coal",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:raw_iron",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:raw_gold",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:raw_copper",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "create:raw_zinc",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4,
+                "min": 1
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:redstone",
+          "weight": 13
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4,
+                "min": 1
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:lapis_lazuli",
+          "weight": 13
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "kubejs:gameplay/fishing/fish"
+}
