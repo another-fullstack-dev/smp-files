@@ -54,7 +54,7 @@ PlayerEvents.tick((event)=>{
   data.randomEffectTimer--
 
   if (data.randomEffectTimer <= 0) {
-    player.potionEffects.add("kubejs:kuva", 1500, 0, false, true);
+    player.potionEffects.add("kubejs:kuva", 1500, 0, true, true);
     data.randomEffectTimer = Math.floor(
       Math.random() * (MAX - MIN + 1)
     ) + MIN
@@ -99,10 +99,10 @@ function applyOrokin(event, force) {
   }
 
   if (!player.hasEffect("kubejs:orokin")) {
-    player.potionEffects.add("kubejs:orokin", -1, 0, false, true);
+    player.potionEffects.add("kubejs:orokin", -1, 0, true, true);
   } else if (force) {
     player.removeEffect("kubejs:orokin");
-    player.potionEffects.add("kubejs:orokin", -1, 0, false, true);
+    player.potionEffects.add("kubejs:orokin", -1, 0, true, true);
   }
 }
 
