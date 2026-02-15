@@ -15,8 +15,8 @@ reducedDebugInfo:false
 showSubtitles:false
 directionalAudio:false
 touchscreen:false
-fullscreen:true
-bobView:false
+fullscreen:false
+bobView:true
 toggleCrouch:false
 toggleSprint:false
 darkMojangStudiosBackground:false
@@ -30,11 +30,11 @@ glintSpeed:0.5
 glintStrength:0.75
 damageTiltStrength:1.0
 highContrast:false
-gamma:0.5
+gamma:1.0
 renderDistance:12
 simulationDistance:12
-entityDistanceScaling:1.0
-guiScale:3
+entityDistanceScaling:1.5
+guiScale:0
 particles:0
 maxFps:120
 graphicsMode:1
@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"false"
-resourcePacks:["fabric","seasons:seasonal_lush_caves"]
+resourcePacks:["vanilla","create:dynamic_data","fabric","Moonlight Mods Dynamic Assets","seasons:seasonal_lush_caves","continuity:default","continuity:glass_pane_culling_fix"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
@@ -68,7 +68,7 @@ useNativeTransport:true
 mainHand:"right"
 attackIndicator:1
 narrator:0
-tutorialStep:none
+tutorialStep:movement
 mouseWheelSensitivity:1.0
 rawMouseInput:true
 glDebugVerbosity:1
@@ -84,8 +84,8 @@ onlyShowSecureChat:false
 panoramaScrollSpeed:1.0
 telemetryOptInExtra:false
 onboardAccessibility:false
-soundCategory_master:0.14679911699779252
-soundCategory_music:0.0
+soundCategory_master:1.0
+soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0
