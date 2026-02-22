@@ -1,5 +1,3 @@
-// disclaimer: it works in testing but im not sure if its all correct.
-// sometimes endermen spawn green particles on death and i have no idea why.
 LootJS.modifiers((event) => {
   event
     .addLootTableModifier("minecraft:entities/enderman")
