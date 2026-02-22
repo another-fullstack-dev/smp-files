@@ -16,9 +16,6 @@ LootJS.modifiers((event) => {
       pool.rolls(1);
 
       pool.addAlternativesLoot(
-        // =========================
-        // TREASURE CATEGORY
-        // =========================
         LootEntry.ofJson({
           type: "minecraft:loot_table",
           name: "kubejs:gameplay/fishing/treasure",
@@ -31,9 +28,6 @@ LootJS.modifiers((event) => {
           ],
         }),
 
-        // =========================
-        // JUNK CATEGORY
-        // =========================
         LootEntry.ofJson({
           type: "minecraft:loot_table",
           name: "kubejs:gameplay/fishing/junk",
@@ -46,9 +40,6 @@ LootJS.modifiers((event) => {
           ],
         }),
 
-        // =========================
-        // FISH CATEGORY (fallback)
-        // =========================
         LootEntry.ofJson({
           type: "minecraft:loot_table",
           name: "kubejs:gameplay/fishing/fish",
@@ -63,4 +54,22 @@ LootJS.modifiers((event) => {
     .matchLoot("minecraft:nether_star")
     // lightning underground? do not problem
     .triggerLightningStrike(false); // passing a boolean is not optional for some reason...
-})
+});
+
+LootJS.modifiers((event) => {
+  event
+    .addLootTypeModifier(LootType.FISHING)
+    .anyDimension("minecraft:overworld")
+    .addAlternativesLoot(
+      LootEntry.of(loreBooks.madman[0]).when((c) => c.randomChance(0.025)),
+    );
+});
+
+const loreBooks = {
+  madman: {
+    0: Item.of(
+      "minecraft:written_book",
+      '{author:"Неизвестно",filtered_title:"Записки",pages:[\'{"text":"...сколько уже это длится? месяцы? годы? ...кже .. .\\\\nл.\\\\n\\\\nпора мне с этим покончить... "}\'],title:"Записки"}',
+    ),
+  },
+};
