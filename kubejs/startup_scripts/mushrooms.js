@@ -18,13 +18,4 @@ ItemEvents.modification((event) => {
         .effect("minecraft:hunger", 100, 0, 0.25);
     };
   });
-  event.modify("minecraft:damaged_anvil", (item) => {
-    item.foodProperties = (food) => {
-      food
-        .alwaysEdible()
-        .effect("minecraft:slowness", 200, 5, 1.0)
-        .hunger(0)
-        .saturation(0);
-    };
-  });
 });
