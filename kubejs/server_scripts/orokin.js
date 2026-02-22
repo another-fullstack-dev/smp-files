@@ -54,7 +54,7 @@ PlayerEvents.tick((event)=>{
   data.randomEffectTimer--
 
   if (data.randomEffectTimer <= 0) {
-    player.potionEffects.add("kubejs:kuva", 1500, 0, true, true);
+    player.potionEffects.add("kubejs:kuva", 1500, 0, false, true);
     data.randomEffectTimer = Math.floor(
       Math.random() * (MAX - MIN + 1)
     ) + MIN
