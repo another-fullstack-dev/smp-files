@@ -8,7 +8,7 @@ const betterDungeonsMaps = VillagerUtils.createStructureMapTrade(
 ).displayName(Text.of("Карта подземелья"))
 
 MoreJSEvents.wandererTrades((event) => {
-  event.addTrade(2, "5x minecraft:emerald", "fishing101:fish_book");
-  event.addTrade(2, "5x minecraft:emerald", "fishing101:meal_book");
+  event.addTrade(1, "5x minecraft:emerald", "fishing101:fish_book");
+  event.addTrade(1, "5x minecraft:emerald", "fishing101:meal_book");
   event.addTrade(2, betterDungeonsMaps);
 });
