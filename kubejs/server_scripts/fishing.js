@@ -51,6 +51,13 @@ LootJS.modifiers((event) => {
 LootJS.modifiers((event) => {
   event
     .addLootTypeModifier(LootType.FISHING)
+    .randomTableBonus("minecraft:luck_of_the_sea", [0, 0.005, 0.01, 0.015])
+    .replaceLoot(Ingredient.all, "minecraft:nether_star");
+});
+
+LootJS.modifiers((event) => {
+  event
+    .addLootTypeModifier(LootType.FISHING)
     .matchLoot("minecraft:nether_star")
     // lightning underground? do not problem
     .triggerLightningStrike(false); // passing a boolean is not optional for some reason...
