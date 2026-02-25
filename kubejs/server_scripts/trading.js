@@ -14,17 +14,25 @@ MoreJSEvents.wandererTrades((event) => {
 });
 
 MoreJSEvents.villagerTrades((event) => {
-  const starMerchant = "spacecatcustomprofessions:star_merchant" // nice namespace moron
+  const starMerchant = "spacecatcustomprofessions:star_merchant"; // nice namespace moron
   event.addTrade(
-    starMerchant, 
+    starMerchant,
     1,
+    ["64x minecraft:gold_ingot", "32x minecraft:diamond"],
     "minecraft:nether_star",
-    Item.of("minecraft:fishing_rod").enchant("minecraft:lure", 10).withName("Алмазом инкрустированная золотая удочка"),
   );
   event.addTrade(
-    starMerchant, 
+    starMerchant,
     1,
     "minecraft:nether_star",
-    Item.of("kubejs:bf_sword").withName("Слишком большой меч"),
+    Item.of("minecraft:fishing_rod")
+      .enchant("minecraft:lure", 10)
+      .withName("Алмазом инкрустированная золотая удочка"),
+  );
+  event.addTrade(
+    starMerchant,
+    1,
+    "minecraft:nether_star",
+    Item.of("kubejs:bf_sword"),
   );
 });
