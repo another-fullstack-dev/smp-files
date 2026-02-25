@@ -7,5 +7,6 @@ StartupEvents.registry("item", (event) => {
     .texture("kubejs:item/bf_sword")
     .tier("netherite")
     .attackDamageBaseline(11)
-    .speed(1.4)
+    .speed(1.4);
+  event.create("raw_diamond");
 });
