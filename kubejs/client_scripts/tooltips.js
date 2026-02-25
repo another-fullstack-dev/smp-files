@@ -22,7 +22,7 @@ ItemEvents.tooltip((event) => {
         text.add(4, Text.darkGray("- Увеличение скорости на 15%"))
         text.add(5, Text.darkGray("- Вы станете чуточку легче..."))
         text.add(6, [Text.darkGray("Но на все это есть своя "), Text.darkRed("цена")])
-        text.add(8, Text.gray("Медленно восстанавливает небольшой запас прочности"))
+        text.add(7, Text.gray("Медленно восстанавливает небольшой запас прочности"))
       }
     },
   );
