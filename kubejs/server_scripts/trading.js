@@ -31,8 +31,8 @@ MoreJSEvents.villagerTrades((event) => {
   );
   event.addTrade(
     starMerchant,
-    1,
-    "minecraft:nether_star",
+    2,
+    "3x minecraft:nether_star",
     Item.of("kubejs:bf_sword"),
   );
 });
