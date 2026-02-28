@@ -20,7 +20,7 @@ MoreJSEvents.villagerTrades((event) => {
     1,
     ["64x minecraft:gold_ingot", "32x minecraft:diamond"],
     "minecraft:nether_star",
-  );
+  ).maxUses(1).priceMultiplier(0.05);
   event.addTrade(
     starMerchant,
     1,
@@ -28,11 +28,20 @@ MoreJSEvents.villagerTrades((event) => {
     Item.of("minecraft:fishing_rod")
       .enchant("minecraft:lure", 10)
       .withName("Алмазом инкрустированная золотая удочка"),
-  );
+  ).maxUses(1);
   event.addTrade(
     starMerchant,
     2,
     "3x minecraft:nether_star",
     Item.of("kubejs:bf_sword"),
-  );
+  ).maxUses(1);
+  event.addTrade(
+    starMerchant,
+    2,
+    "5x minecraft:nether_star",
+    Item.of("minecraft:netherite_pickaxe")
+      .enchant("minecraft:unbreaking", 5)
+      .enchant("minecraft:fortune", 4)
+      .withName("Экскаватор"),
+  ).maxUses(1);
 });
