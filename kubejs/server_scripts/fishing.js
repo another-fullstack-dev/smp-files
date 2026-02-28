@@ -4,7 +4,7 @@ LootJS.modifiers((event) => {
 
     .entityPredicate((entity) => {
       // this is a very simple check for caves - anywhere where you cant see sky and under y=60.
-      // it is checked against bobber
+      // it is checked against bobber // are you sure?
       const pos = entity.blockPosition();
       const level = entity.level;
       return !level.canSeeSky(pos) && pos.y <= 60;
