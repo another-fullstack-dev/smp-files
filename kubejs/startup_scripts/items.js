@@ -8,5 +8,4 @@ StartupEvents.registry("item", (event) => {
     .tier("netherite")
     .attackDamageBaseline(11)
     .speed(1.4);
-  event.create("raw_diamond");
 });

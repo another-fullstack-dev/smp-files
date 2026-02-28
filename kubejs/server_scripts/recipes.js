@@ -12,14 +12,3 @@ ServerEvents.recipes((event) => {
     600,
   );
 });
-
-ServerEvents.recipes((event) => {
-  event.recipes.create
-    .compacting("kubejs:raw_diamond", "minecraft:coal_block")
-    .superheated();
-
-  event.recipes.create.cutting(
-    [Item.of("minecraft:diamond").withChance(0.25)],
-    "kubejs:raw_diamond",
-  );
-});
