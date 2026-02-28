@@ -57,4 +57,12 @@ MoreJSEvents.villagerTrades((event) => {
     )
     .maxUses(1)
     .villagerExperience(70);
+  event
+    .addTrade(
+      starMerchant,
+      3,
+      ["64x minecraft:amethyst_shard", "64x minecraft:amethyst_shard"],
+      Item.of("minecraft:diamond"),
+    )
+    .maxUses(5);
 });
