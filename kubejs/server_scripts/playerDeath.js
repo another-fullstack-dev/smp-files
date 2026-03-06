@@ -13,6 +13,8 @@ EntityEvents.death((event) => {
     if (finalValue >= item.maxDamage) {finalValue = item.maxDamage - 1} // dont break it completely just yet...
     item.setDamageValue(finalValue);
   });
+
+  player.setXp(player.xp / 2)
 });
 
 /**
