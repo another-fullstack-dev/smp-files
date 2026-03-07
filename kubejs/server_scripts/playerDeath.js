@@ -12,11 +12,11 @@ EntityEvents.death((event) => {
       return gearItem == item;
     });
     if (isInGear) return;
-    
+
     const count = item.count;
     for (let i = 0; i < count; i++) {
       if (Math.random() < 0.1) {
-        event.level.runCommand(
+        event.level.runCommandSilent(
           `summon minecraft:item ${player.x} ${player.y} ${player.z} {Item:{id:"${item.id}",Count:1b}}`,
         ); // drop it nicely on their death location
         item.shrink(1); // take it from player
@@ -48,6 +48,13 @@ function isGear(item) {
     if (item.hasTag(tag)) {
       isValid = true;
       break;
+    }
+  }
+
+  // trying to work with modded items on best-effort basis.
+  if (!item.id.startsWith("minecraft")) {
+    if (item.isDamageableItem()) {
+      isValid = true;
     }
   }
   return isValid;
