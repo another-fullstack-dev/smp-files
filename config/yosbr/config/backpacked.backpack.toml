@@ -32,7 +32,7 @@
 		# 
 		# Note: This property has no effect if useCustomCosts is set to true
 		# Valid range: 1 to 100 (inclusive)
-		maxCost = 100
+		maxCost = 32
 		# Determines how the cost value is selected from the customCosts list.
 		# 
 		# Possible Functions:
@@ -95,7 +95,7 @@
 		# Note: This property has no effect if useCustomCosts is set to true
 		# 
 		# Valid values: LINEAR, SQUARED, CUBIC
-		costInterpolateFunction = "SQUARED"
+		costInterpolateFunction = "LINEAR"
 		# The minimum cost to unlock a backpack slot. This value would be the cost
 		# when unlocking the first slot in a backpack inventory. The cost to unlock
 		# subsequent slots are interpolated from the this value to the maxCost, and
@@ -103,13 +103,13 @@
 		# 
 		# Note: This property has no effect if useCustomCosts is set to true
 		# Valid range: 1 to 100 (inclusive)
-		minCost = 30
+		minCost = 16
 		# The type of payment to use to unlock backpack slots. By default this value is set to EXPERIENCE,
 		# which will use the players experience levels are used to unlock new slots. If value is set to
 		# ITEM, this will instead consume a specified item from the player's inventory (including anything
 		# placed in the backpack) to unlock new slots.
 		# Valid values: EXPERIENCE, ITEM
-		paymentType = "EXPERIENCE"
+		paymentType = "ITEM"
 
 # Equipable related properties
 [equipable]
@@ -282,7 +282,7 @@
 			# 
 			# Note: This property has no effect if useCustomCosts is set to true
 			# Valid range: 1 to 100 (inclusive)
-			maxCost = 100
+			maxCost = 8
 			# Determines how the cost value is selected from the customCosts list.
 			# 
 			# Possible Functions:
@@ -345,7 +345,7 @@
 			# Note: This property has no effect if useCustomCosts is set to true
 			# 
 			# Valid values: LINEAR, SQUARED, CUBIC
-			costInterpolateFunction = "SQUARED"
+			costInterpolateFunction = "LINEAR"
 			# The minimum cost to unlock a backpack slot. This value would be the cost
 			# when unlocking the first slot in a backpack inventory. The cost to unlock
 			# subsequent slots are interpolated from the this value to the maxCost, and
@@ -359,7 +359,7 @@
 			# ITEM, this will instead consume a specified item from the player's inventory (including anything
 			# placed in the backpack) to unlock new slots.
 			# Valid values: EXPERIENCE, ITEM
-			paymentType = "EXPERIENCE"
+			paymentType = "ITEM"
 
 	# Size related properties
 	[inventory.size]
