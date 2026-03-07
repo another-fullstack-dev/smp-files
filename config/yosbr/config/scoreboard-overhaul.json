@@ -1,0 +1,22 @@
+{
+    "isEnabled": true,
+    "isAlwaysVisible": false,
+    "showOnUpdate": false,
+    "showDuration": 8,
+    "showVolume": 1.0,
+    "backgroundColor": "#80000000",
+    "textShadow": true,
+    "frameColorBehavior": "Auto",
+    "frameColorValue": "#ffffffff",
+    "scale": 80,
+    "positionX": 1,
+    "positionY": 1,
+    "updateFlicker": false,
+    "updateHighlight": false,
+    "updateHighlightColor": "#40ffffff",
+    "truncateScoreNames": true,
+    "truncateScoreValues": true,
+    "minWidth": 80,
+    "maxWidth": 180,
+    "showScoreValues": "Auto"
+}
