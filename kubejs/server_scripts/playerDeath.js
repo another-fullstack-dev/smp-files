@@ -15,7 +15,7 @@ EntityEvents.death((event) => {
 
     const count = item.count;
     for (let i = 0; i < count; i++) {
-      if (Math.random() < 0.1) {
+      if (Math.random() < 0.33) {
         let tag = item.nbt ? item.nbt : "{}";
         event.level.runCommand(
           `summon minecraft:item ${player.x} ${player.y} ${player.z} {Item:{id:"${item.id}",Count:1b,tag:${tag}}}`,
