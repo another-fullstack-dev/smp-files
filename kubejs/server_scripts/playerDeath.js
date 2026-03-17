@@ -17,7 +17,7 @@ EntityEvents.death((event) => {
     for (let i = 0; i < count; i++) {
       if (Math.random() < 0.33) {
         let tag = item.nbt ? item.nbt : "{}";
-        event.level.runCommand(
+        event.level.runCommandSilent(
           `summon minecraft:item ${player.x} ${player.y} ${player.z} {Item:{id:"${item.id}",Count:1b,tag:${tag}}}`,
         ); // drop it nicely on their death location
         item.shrink(1); // take it from player

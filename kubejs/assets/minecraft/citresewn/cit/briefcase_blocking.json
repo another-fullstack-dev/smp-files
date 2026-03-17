@@ -1,0 +1,19 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"parent": "briefcase.json",
+	"display": {
+		"thirdperson_lefthand": {
+			"rotation": [48, -8, -85],
+			"translation": [-2.5, -1.75, -0.25]
+		},
+		"firstperson_righthand": {
+			"rotation": [4, 0, -138],
+			"translation": [-3, -2, 2]
+		},
+		"firstperson_lefthand": {
+			"rotation": [4, 0, -138],
+			"translation": [-3, -2, 2]
+		}
+	}
+}
